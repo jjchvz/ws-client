@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+      
+    <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0 
+Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2021.05.12 a las 09:47:14 AM VET 
+
+  -->
+      
+    <bindings xmlns:tns="http://0050180878-one-off.sap.com/Y8PZZIGMY_" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.ncg.wsclient.sap"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:AccountingEntryImportCreateConfirmationMessage_sync">
+                  
+            <class ref="com.ncg.wsclient.sap.AccountingEntryImportCreateConfirmationMessageSync"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:AccountingEntryImportCreateRequestMessage_sync">
+                  
+            <class ref="com.ncg.wsclient.sap.AccountingEntryImportCreateRequestMessageSync"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:AccountingEntryImportCreateConfirmation">
+                  
+            <class ref="com.ncg.wsclient.sap.AccountingEntryImportCreateConfirmation"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:AccountingEntryImportCreateRequest">
+                  
+            <class ref="com.ncg.wsclient.sap.AccountingEntryImportCreateRequest"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="http://sap.com/xi/AP/Common/Global" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.ncg.wsclient.sap"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="tns:StandardFaultMessage">
+                  
+            <class ref="com.ncg.wsclient.sap.StandardFaultMessage"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ExchangeFaultData">
+                  
+            <class ref="com.ncg.wsclient.sap.ExchangeFaultData"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:StandardFaultMessageExtension">
+                  
+            <class ref="com.ncg.wsclient.sap.StandardFaultMessageExtension"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ExchangeLogData">
+                  
+            <class ref="com.ncg.wsclient.sap.ExchangeLogData"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="http://sap.com/xi/AP/FinancialAccounting/Global" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.ncg.wsclient.sap"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:AccountingDocumentTypeCode">
+                  
+            <class ref="com.ncg.wsclient.sap.AccountingDocumentTypeCode"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="http://sap.com/xi/AP/Common/GDT" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.ncg.wsclient.sap"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:BusinessDocumentBasicMessageHeader">
+                  
+            <class ref="com.ncg.wsclient.sap.BusinessDocumentBasicMessageHeader"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:BusinessDocumentMessageID">
+                  
+            <class ref="com.ncg.wsclient.sap.BusinessDocumentMessageID"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:BusinessTransactionDocumentID">
+                  
+            <class ref="com.ncg.wsclient.sap.BusinessTransactionDocumentID"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:Log">
+                  
+            <class ref="com.ncg.wsclient.sap.Log"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:LogItem">
+                  
+            <class ref="com.ncg.wsclient.sap.LogItem"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:LogItemCategoryCode">
+                  
+            <class ref="com.ncg.wsclient.sap.LogItemCategoryCode"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:LogItemNotePlaceholderSubstitutionList">
+                  
+            <class ref="com.ncg.wsclient.sap.LogItemNotePlaceholderSubstitutionList"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:SHORT_Note">
+                  
+            <class ref="com.ncg.wsclient.sap.SHORTNote"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:UUID">
+                  
+            <class ref="com.ncg.wsclient.sap.UUID"/>
+                
+        </bindings>
+          
+    </bindings>
+    
+</bindings>

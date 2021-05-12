@@ -1,0 +1,7 @@
+server:
+  port: 8080
+
+ws:
+  url: https://my345987.sapbydesign.com/sap/bc/srt/scs/sap/yy8pzzigmy_manageaccountingent?sap-vhost=my345987.sapbydesign.com
+  username: _SICO
+  password: X5dtJRKhS3zGvQ
