@@ -20,28 +20,12 @@ public class SoapClient extends WebServiceGatewaySupport {
     @Autowired
     private ClientConfig clientConfig;
 
-    public JAXBElement<AccountingEntryImportCreateConfirmationMessageSync> createRequest(
+    public AccountingEntryImportCreateConfirmationMessageSync createRequest(
             String CompanyID,
             String TransactionCurrencyCode
     ){
 
         ObjectFactory factory = new ObjectFactory();
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // BusinessDocumentBasicMessageHeader
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        BusinessDocumentBasicMessageHeader basicMessageHeader = factory
-                .createBusinessDocumentBasicMessageHeader();
-
-        BusinessDocumentMessageID businessDocumentMessageID = new BusinessDocumentMessageID();
-        businessDocumentMessageID.setValue("");
-        basicMessageHeader.setID(businessDocumentMessageID);
-        basicMessageHeader.setReferenceID(businessDocumentMessageID);
-
-        UUID uuid = new UUID();
-        uuid.setValue("");
-        basicMessageHeader.setUUID(uuid);
-        basicMessageHeader.setReferenceUUID(uuid);
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // AccountingEntryImportCreateRequest
@@ -56,7 +40,6 @@ public class SoapClient extends WebServiceGatewaySupport {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         AccountingEntryImportCreateRequestMessageSync accountingEntryImportCreateRequestMessageSync = factory
                 .createAccountingEntryImportCreateRequestMessageSync();
-        accountingEntryImportCreateRequestMessageSync.setBasicMessageHeader(basicMessageHeader);
         accountingEntryImportCreateRequestMessageSync.setAccountingEntryImport(accountingEntryImportCreateRequest);
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -65,7 +48,7 @@ public class SoapClient extends WebServiceGatewaySupport {
         JAXBElement<AccountingEntryImportCreateRequestMessageSync> requestMessageSync = factory
                 .createAccountingEntryImportCreateRequestSync(accountingEntryImportCreateRequestMessageSync);
 
-        return (JAXBElement<AccountingEntryImportCreateConfirmationMessageSync>) getWebServiceTemplate()
+        JAXBElement<AccountingEntryImportCreateConfirmationMessageSync> response = (JAXBElement<AccountingEntryImportCreateConfirmationMessageSync>) getWebServiceTemplate()
                 .marshalSendAndReceive(requestMessageSync, new WebServiceMessageCallback() {
                     @Override
                     public void doWithMessage(WebServiceMessage webServiceMessage) throws IOException, TransformerException {
@@ -80,5 +63,7 @@ public class SoapClient extends WebServiceGatewaySupport {
                         );
                     }
                 });
+
+        return response.getValue();
     }
 }

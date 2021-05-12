@@ -15,7 +15,7 @@ public class AccountingEntryImportController {
     SoapClient soapClient;
 
     @GetMapping("/aei")
-    public JAXBElement<AccountingEntryImportCreateConfirmationMessageSync> create(){
+    public AccountingEntryImportCreateConfirmationMessageSync create(){
         return soapClient.createRequest(
                 "9000",
                 "USD"
